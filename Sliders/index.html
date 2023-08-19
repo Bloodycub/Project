@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="values hidden" id="values-container">
+            <span id="range1"></span>
+            <span> &dash; </span>
+            <span id="range2"></span>
+        </div>
+        Checked if avaible.
+        <div class="container">
+            <div class="slider-track"></div>
+            <input type="range" min="00.00" max="23.59" id="slider-1" oninput="slideOne()">
+            <input type="range" min="00.00" max="23.59" id="slider-2" oninput="slideTwo()">
+        </div>
+
+        </label>
+
+        <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" value="Monday" />
+            <div class="slider round"></div>
+            <span class="day-label">Mon</span>
+          </label>
+          <div class="text-box-container hidden" id="text-box-container">
+            <input type="text" id="text-input" placeholder="Reason not available.">
+            <button id="submit-text-btn">Submit</button>
+        </div>
+                <div id="submitted-text"></div>
+
+        
+        
+    <!-- Include your main script -->
+    <script src="script.js"></script>
+</body>
+</html>

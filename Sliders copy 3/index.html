@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="values hidden" id="values-container">
+            <span id="range1"></span>
+            <span> &dash; </span>
+            <span id="range2"></span>
+        </div>
+        Checked if available.
+        <div class="container">
+            <div class="slider-track"></div>
+            <input type="range" min="00.00" max="23.59" id="slider-1" oninput="slideOne()">
+            <input type="range" min="00.00" max="23.59" id="slider-2" oninput="slideTwo()">
+        </div>
+        <label class="switch" for="checkbox">
+            <input type="checkbox" id="checkbox" value="Monday" />
+            <div class="slider round"></div>
+            <span class="day-label">Mon</span>
+        </label>
+
+        <!-- Tuesday section -->
+        
+        
+        <div class="values hidden" id="values-container-tuesday">
+            <span id="range1-tuesday"></span>
+            <span> &dash; </span>
+            <span id="range2-tuesday"></span>
+        </div>
+        <div class="container">
+            <div class="slider-track slider-track-tuesday"></div>
+            <input type="range" min="00.00" max="23.59" id="slider-tuesday-1" oninput="slideTuesdayOne()">
+            <input type="range" min="00.00" max="23.59" id="slider-tuesday-2" oninput="slideTuesdayTwo()">
+        </div>
+        <label class="switch" for="tuesday-checkbox">
+            <input type="checkbox" id="tuesday-checkbox" value="Tuesday" />
+            <div class="slider round"></div>
+            <span class="day-label">Tue</span>
+        </label>
+        <!-- End of wednesday section -->
+        <div class="values hidden" id="values-container-wednesday">
+            <span id="range1-wednesday"></span>
+            <span> &dash; </span>
+            <span id="range2-wednesday"></span>
+        </div>
+        <div class="container">
+            <div class="slider-track slider-track-wednesday"></div>
+            <input type="range" min="00.00" max="23.59" id="slider-tuesday-1" oninput="slideTuesdayOne()">
+            <input type="range" min="00.00" max="23.59" id="slider-tuesday-2" oninput="slideTuesdayTwo()">
+        </div>
+        <label class="switch" for="wednesday-checkbox">
+            <input type="checkbox" id="wednesday-checkbox" value="wednesday" />
+            <div class="slider round"></div>
+            <span class="day-label">Wen</span>
+        </label>
+        <!-- Rest of the days ... -->
+
+        <div class="text-box-container hidden" id="text-box-container">
+            <input type="text" id="text-input" placeholder="Reason not available.">
+            <button id="submit-text-btn">Submit</button>
+        </div>
+        <div id="submitted-text"></div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
